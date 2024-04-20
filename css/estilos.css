@@ -1,0 +1,237 @@
+/*------------------inicio reset css-------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*//*#reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;/*para cambiar y la anchura total se igual a width*/
+}
+/*------------------fin reset css-------------------------*/
+/*-----------------------------por etiqueta general----------------------------------------*/
+body{/*
+    background-image:url(imagenes/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: black;
+    
+}
+h1{/*para poder adicionar mas seria h1, h2{..*/
+    font-size: 46px;/*font-size se hereda a los hijos*/
+    font-weight: bold;/*peso tipografico en este caso negrita se puede colocar numero para ejemplo 200*/
+    font-style: italic;/*cursiva para reinicar seria normal*/
+    text-decoration: none;/*para decorar puede ser tachado o subrallado entre otros*/
+    color: blueviolet;
+    /*background-color:; para colocar fondos*/
+    /*centar una caja horizontal*/
+    margin-left: auto;
+    margin-right: auto;
+/*centar una caja horizontal*/
+text-align: center;
+/*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+h2{
+    font-size: 32px;
+    color: blueviolet;
+    font-style: oblique;
+    font-weight: 800;
+}
+ul{
+    display: block;
+    list-style-type:lower-alpha;
+    -webkit-margin-start: 40px;
+}
+img{
+    max-width: 100%;
+}
+/*-----------------------------por etiqueta general----------------------------------------*/
+/*---------------------------------Estilos tipo graficos-------------------------------*/
+.iceberg-regular {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.caveat-informacion {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*---------------------------------Estilos tipo graficos-------------------------------*/
+/*-------------------------------------Cabecera----------------------------------------*/
+.cabeza{
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    /*
+    top: 0;
+    left: 0;
+    right: 0;
+    /**/
+}
+.spanCabeza{
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*-------------------------------------Cabecera----------------------------------------*/
+/*-----------------------Bloque unico medio----------------------------------------*/
+.informacion{
+    font-size: 24px;
+    background-color: white;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    width: 99%;
+    border-radius: 20px;
+    box-shadow:/**/ 5px 5px 10px yellow;/*ejeX, ejeY, Difuminado, (opcional difuminado), color*/ 
+    line-height: normal;
+    overflow: auto;
+    /*
+    left: 0;
+    right: 0;*/
+    /*centar una caja horizontal*/
+    /*
+        margin-left: auto;
+        margin-right: auto;
+        */
+    /*centar una caja horizontal*/
+/*-----------------------Bloque unico medio----------------------------------------*/
+}
+/*-----------------------------float de parrafo----------------------------------------*/
+.contenedorFloat{
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.parrafo{/*parrafo de general test*/
+    background-color: whitesmoke;
+    min-height: 400px;
+    max-height: 800px;
+    padding: 15px;
+    margin:2px;
+    line-height: normal;
+    float:left;
+    width: 49%;
+    overflow: auto;
+    box-shadow: 5px 5px 10px yellow;
+    border-radius: 20px;
+    /*estilo de texto*/
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /*estilo de texto*/
+}
+.imgcontenedor{
+    position: relative;/*
+    background-color: whitesmoke;
+    background-image: linear-gradient(to bottom, 
+                    #ffcc00 33.33%, 
+                    #00247d 33.33% 66.66%, 
+                    #cf142b 66.66%);
+                    */
+                    background-image: url('../img/banderaVenezuela.png');
+                    background-size: cover; /* Asegura que la imagen cubra todo el div */
+                    background-repeat: no-repeat; /* Evita que la imagen se repita */
+                    background-position: center; /* Centra la imagen en el div */            
+    min-height: 400px;
+    max-height: 800px;
+    padding: 10px;
+    margin:2px;
+    float:left;
+    width: 49%;    
+    overflow: cover;
+    box-shadow: 5px 5px 10px #A82548;
+    border-radius: 20px;
+}
+/*modelo pantalla completa
+.imgcontenedor{
+    position: relative;
+    background-color: whitesmoke;
+    
+    height: 400px;
+    padding: 10px;
+    margin:2px;
+    float:left;
+    width: 49%;    
+    overflow: auto;
+    box-shadow: 2px 2px 1px blueviolet;
+    border-radius: 20px;
+}
+
+*/
+.nombrepersonaje{
+    position: absolute;
+    top: 15px;
+    left: 15px;    
+}
+/*-----------------------------float de parrafo----------------------------------------*/
+/*-----------------------Estructura----------------------------------------*/
+/*   : para selecionar seudo clases*/
+a:hover{/*cuando pasas el mouse por encima */
+    text-decoration: underline;
+}
+a:active{/*cuando se clica*/
+    color: orange;
+}
+a:focus{/*el cursos o tabulador*/
+    background-color: lightskyblue;
+}
+/*-----------------------Pie----------------------------------------*/
+.pie{
+    /*centar una caja horizontal*/
+        margin-left: auto;
+        margin-right: auto;
+    /*centar una caja horizontal*/
+}
+/*-----------------------Paginas----------------------------------------*/
