@@ -152,6 +152,8 @@ img{
     margin-bottom: 5px;
     width: 100%;
     border-radius: 20px;
+
+    
 }
 
 .parrafo{/*parrafo de general test*/
@@ -161,15 +163,17 @@ img{
     padding: 15px;
     margin:2px;
     line-height: normal;
-    float:left;
-    width: 49%;
+    float:none;
+    width: 100%;
     overflow: auto;
-    box-shadow: 5px 5px 10px yellow;
+    box-shadow: 5px 5px 10px #A82548;
     border-radius: 20px;
     /*estilo de texto*/
     font-family: "Iceberg", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 25px;
+    color: #A82548;
     /*estilo de texto*/
 }
 .imgcontenedor{
@@ -188,9 +192,9 @@ img{
     max-height: 800px;
     padding: 10px;
     margin:2px;
-    float:left;
-    width: 49%;    
-    overflow: cover;
+    float:none;
+    width: 100%;    
+    overflow:hidden;
     box-shadow: 5px 5px 10px #A82548;
     border-radius: 20px;
 }
@@ -235,3 +239,13 @@ a:focus{/*el cursos o tabulador*/
     /*centar una caja horizontal*/
 }
 /*-----------------------Paginas----------------------------------------*/
+@media screen and (min-width: 850px) {
+    .parrafo{
+        width: 28%;
+        float: left;
+        font-size: 35px;
+    } .imgcontenedor{
+        width: 70%;
+        float: left;
+    }
+}
